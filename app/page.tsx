@@ -146,13 +146,13 @@ export default function HazmobFPSPage() {
                   <div className="relative">
                     <div className="w-full h-80 relative overflow-hidden">
                       <img
-                        src={`/abstract-geometric-shapes.png?key=jxbe5&height=320&width=480&query=${encodeURIComponent(`${game.title} FPS game cover art military tactical shooter dark theme`)}`}
+                        src={`/abstract-geometric-shapes.png?height=320&width=480&query=${encodeURIComponent(`${game.title} FPS game cover art military tactical shooter dark theme neon green pink accents`)}`}
                         alt={`${game.title} game cover`}
                         className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-background via-transparent to-transparent opacity-80" />
                       <div className="absolute top-4 right-4">
-                        <div className="bg-primary/90 text-primary-foreground px-3 py-1 rounded-full text-sm font-bold">
+                        <div className="bg-primary/90 text-primary-foreground px-3 py-1 rounded-full text-sm font-bold fps-glow">
                           ONLINE
                         </div>
                       </div>
@@ -168,7 +168,7 @@ export default function HazmobFPSPage() {
                           </div>
                           <Button
                             size="sm"
-                            className="bg-gradient-to-r from-secondary to-secondary/80 hover:from-secondary/90 hover:to-secondary text-secondary-foreground"
+                            className="bg-gradient-to-r from-secondary to-secondary/80 hover:from-secondary/90 hover:to-secondary text-secondary-foreground fps-glow"
                           >
                             DEPLOY →
                           </Button>
@@ -183,162 +183,85 @@ export default function HazmobFPSPage() {
         </div>
       </div>
 
-      {/* Features Grid */}
-      <div className="container mx-auto px-4 py-16">
-        <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-12">Game Features</h2>
+      <div className="container mx-auto px-4 py-16 tactical-grid">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">TACTICAL FEATURES</h2>
+          <div className="w-24 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mb-6"></div>
+          <p className="text-xl text-muted-foreground">Advanced combat systems for elite operatives</p>
+        </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
-          <Card className="bg-slate-800/50 border-slate-700 hover:border-orange-500/50 transition-all duration-300">
+          <Card className="bg-card/80 border-border hover:border-primary/50 transition-all duration-300 fps-glow">
             <CardContent className="p-6">
-              <div className="w-12 h-12 bg-gradient-to-r from-orange-500 to-red-500 rounded-lg flex items-center justify-center mb-4">
-                <span className="text-white font-bold text-xl">⚡</span>
+              <div className="w-12 h-12 bg-gradient-to-r from-primary to-secondary rounded-lg flex items-center justify-center mb-4 fps-glow">
+                <span className="text-foreground font-bold text-xl">⚡</span>
               </div>
-              <h3 className="text-xl font-semibold text-white mb-3">Fast-Paced Action</h3>
-              <p className="text-slate-400">
+              <h3 className="text-xl font-semibold text-foreground mb-3">Fast-Paced Action</h3>
+              <p className="text-muted-foreground">
                 Experience lightning-fast gameplay with smooth controls and responsive mechanics that keep you in the
                 action.
               </p>
             </CardContent>
           </Card>
 
-          <Card className="bg-slate-800/50 border-slate-700 hover:border-orange-500/50 transition-all duration-300">
+          <Card className="bg-card/80 border-border hover:border-primary/50 transition-all duration-300 fps-glow">
             <CardContent className="p-6">
-              <div className="w-12 h-12 bg-gradient-to-r from-orange-500 to-red-500 rounded-lg flex items-center justify-center mb-4">
-                <span className="text-white font-bold text-xl">🎯</span>
+              <div className="w-12 h-12 bg-gradient-to-r from-primary to-secondary rounded-lg flex items-center justify-center mb-4 fps-glow">
+                <span className="text-foreground font-bold text-xl">🎯</span>
               </div>
-              <h3 className="text-xl font-semibold text-white mb-3">Tactical Combat</h3>
-              <p className="text-slate-400">
+              <h3 className="text-xl font-semibold text-foreground mb-3">Tactical Combat</h3>
+              <p className="text-muted-foreground">
                 Master strategic positioning, weapon selection, and team coordination to outmaneuver your opponents.
               </p>
             </CardContent>
           </Card>
 
-          <Card className="bg-slate-800/50 border-slate-700 hover:border-orange-500/50 transition-all duration-300">
+          <Card className="bg-card/80 border-border hover:border-primary/50 transition-all duration-300 fps-glow">
             <CardContent className="p-6">
-              <div className="w-12 h-12 bg-gradient-to-r from-orange-500 to-red-500 rounded-lg flex items-center justify-center mb-4">
-                <span className="text-white font-bold text-xl">🌐</span>
+              <div className="w-12 h-12 bg-gradient-to-r from-primary to-secondary rounded-lg flex items-center justify-center mb-4 fps-glow">
+                <span className="text-foreground font-bold text-xl">🌐</span>
               </div>
-              <h3 className="text-xl font-semibold text-white mb-3">Online Multiplayer</h3>
-              <p className="text-slate-400">
+              <h3 className="text-xl font-semibold text-foreground mb-3">Online Multiplayer</h3>
+              <p className="text-muted-foreground">
                 Join players from around the world in intense multiplayer battles that test your skills and teamwork.
               </p>
             </CardContent>
           </Card>
 
-          <Card className="bg-slate-800/50 border-slate-700 hover:border-orange-500/50 transition-all duration-300">
+          <Card className="bg-card/80 border-border hover:border-primary/50 transition-all duration-300 fps-glow">
             <CardContent className="p-6">
-              <div className="w-12 h-12 bg-gradient-to-r from-orange-500 to-red-500 rounded-lg flex items-center justify-center mb-4">
-                <span className="text-white font-bold text-xl">🔫</span>
+              <div className="w-12 h-12 bg-gradient-to-r from-primary to-secondary rounded-lg flex items-center justify-center mb-4 fps-glow">
+                <span className="text-foreground font-bold text-xl">🔫</span>
               </div>
-              <h3 className="text-xl font-semibold text-white mb-3">Diverse Arsenal</h3>
-              <p className="text-slate-400">
+              <h3 className="text-xl font-semibold text-foreground mb-3">Diverse Arsenal</h3>
+              <p className="text-muted-foreground">
                 Choose from a variety of realistic weapons, each with unique characteristics and tactical applications.
               </p>
             </CardContent>
           </Card>
 
-          <Card className="bg-slate-800/50 border-slate-700 hover:border-orange-500/50 transition-all duration-300">
+          <Card className="bg-card/80 border-border hover:border-primary/50 transition-all duration-300 fps-glow">
             <CardContent className="p-6">
-              <div className="w-12 h-12 bg-gradient-to-r from-orange-500 to-red-500 rounded-lg flex items-center justify-center mb-4">
-                <span className="text-white font-bold text-xl">🗺️</span>
+              <div className="w-12 h-12 bg-gradient-to-r from-primary to-secondary rounded-lg flex items-center justify-center mb-4 fps-glow">
+                <span className="text-foreground font-bold text-xl">🗺️</span>
               </div>
-              <h3 className="text-xl font-semibold text-white mb-3">Dynamic Maps</h3>
-              <p className="text-slate-400">
+              <h3 className="text-xl font-semibold text-foreground mb-3">Dynamic Maps</h3>
+              <p className="text-muted-foreground">
                 Battle across carefully designed maps that offer multiple strategic routes and tactical opportunities.
               </p>
             </CardContent>
           </Card>
 
-          <Card className="bg-slate-800/50 border-slate-700 hover:border-orange-500/50 transition-all duration-300">
+          <Card className="bg-card/80 border-border hover:border-primary/50 transition-all duration-300 fps-glow">
             <CardContent className="p-6">
-              <div className="w-12 h-12 bg-gradient-to-r from-orange-500 to-red-500 rounded-lg flex items-center justify-center mb-4">
-                <span className="text-white font-bold text-xl">🏆</span>
+              <div className="w-12 h-12 bg-gradient-to-r from-primary to-secondary rounded-lg flex items-center justify-center mb-4 fps-glow">
+                <span className="text-foreground font-bold text-xl">🏆</span>
               </div>
-              <h3 className="text-xl font-semibold text-white mb-3">Competitive Play</h3>
-              <p className="text-slate-400">
+              <h3 className="text-xl font-semibold text-foreground mb-3">Competitive Play</h3>
+              <p className="text-muted-foreground">
                 Climb the leaderboards and prove your skills in ranked matches against players of similar skill levels.
               </p>
             </CardContent>
           </Card>
-        </div>
-      </div>
-
-      {/* How to Play */}
-      <div className="container mx-auto px-4 py-16">
-        <h2 className="text-3xl md:text-4xl font-bold text-white text-center mb-12">How to Play</h2>
-        <div className="max-w-4xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="space-y-6">
-              <div className="flex items-start gap-4">
-                <div className="w-8 h-8 bg-gradient-to-r from-orange-500 to-red-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                  <span className="text-white font-bold text-sm">1</span>
-                </div>
-                <div>
-                  <h3 className="text-lg font-semibold text-white mb-2">Movement Controls</h3>
-                  <p className="text-slate-400">
-                    Use WASD keys to move around the battlefield. Master strafing and positioning for tactical
-                    advantage.
-                  </p>
-                </div>
-              </div>
-              <div className="flex items-start gap-4">
-                <div className="w-8 h-8 bg-gradient-to-r from-orange-500 to-red-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                  <span className="text-white font-bold text-sm">2</span>
-                </div>
-                <div>
-                  <h3 className="text-lg font-semibold text-white mb-2">Aiming & Shooting</h3>
-                  <p className="text-slate-400">
-                    Use your mouse to aim and left-click to fire. Right-click for precision aiming when available.
-                  </p>
-                </div>
-              </div>
-              <div className="flex items-start gap-4">
-                <div className="w-8 h-8 bg-gradient-to-r from-orange-500 to-red-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                  <span className="text-white font-bold text-sm">3</span>
-                </div>
-                <div>
-                  <h3 className="text-lg font-semibold text-white mb-2">Weapon Selection</h3>
-                  <p className="text-slate-400">
-                    Switch between weapons using number keys or scroll wheel. Each weapon has unique properties.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="space-y-6">
-              <div className="flex items-start gap-4">
-                <div className="w-8 h-8 bg-gradient-to-r from-orange-500 to-red-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                  <span className="text-white font-bold text-sm">4</span>
-                </div>
-                <div>
-                  <h3 className="text-lg font-semibold text-white mb-2">Team Strategy</h3>
-                  <p className="text-slate-400">
-                    Coordinate with teammates, control key map positions, and communicate enemy locations.
-                  </p>
-                </div>
-              </div>
-              <div className="flex items-start gap-4">
-                <div className="w-8 h-8 bg-gradient-to-r from-orange-500 to-red-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                  <span className="text-white font-bold text-sm">5</span>
-                </div>
-                <div>
-                  <h3 className="text-lg font-semibold text-white mb-2">Map Awareness</h3>
-                  <p className="text-slate-400">
-                    Learn map layouts, identify choke points, and use cover effectively to gain tactical advantages.
-                  </p>
-                </div>
-              </div>
-              <div className="flex items-start gap-4">
-                <div className="w-8 h-8 bg-gradient-to-r from-orange-500 to-red-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
-                  <span className="text-white font-bold text-sm">6</span>
-                </div>
-                <div>
-                  <h3 className="text-lg font-semibold text-white mb-2">Practice & Improve</h3>
-                  <p className="text-slate-400">
-                    Regular practice improves aim, reaction time, and game sense. Learn from each match.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
 
@@ -375,7 +298,7 @@ export default function HazmobFPSPage() {
                 </div>
                 <Button
                   onClick={handleAddComment}
-                  className="bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary text-primary-foreground font-bold"
+                  className="bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary text-primary-foreground font-bold fps-glow"
                 >
                   🚀 TRANSMIT REPORT
                 </Button>
@@ -386,11 +309,14 @@ export default function HazmobFPSPage() {
           {/* Comments List */}
           <div className="space-y-6">
             {comments.map((comment) => (
-              <Card key={comment.id} className="bg-card border-border hover:border-primary/30 transition-colors">
+              <Card
+                key={comment.id}
+                className="bg-card border-border hover:border-primary/30 transition-colors fps-glow"
+              >
                 <CardContent className="p-6">
                   <div className="flex items-start justify-between mb-3">
                     <div className="flex items-center gap-3">
-                      <div className="w-10 h-10 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center">
+                      <div className="w-10 h-10 bg-gradient-to-r from-primary to-secondary rounded-full flex items-center justify-center fps-glow">
                         <span className="text-sm font-bold">🎯</span>
                       </div>
                       <div>
@@ -414,28 +340,11 @@ export default function HazmobFPSPage() {
         </div>
       </div>
 
-      {/* Call to Action */}
-      <div className="container mx-auto px-4 py-16">
-        <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">Ready for Action?</h2>
-          <p className="text-xl text-slate-300 mb-8">
-            Choose your favorite FPS game and jump into the action! No downloads required - play instantly in your
-            browser.
-          </p>
-          <Button
-            size="lg"
-            className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white font-semibold px-8 py-3 shadow-lg hover:shadow-xl transition-all duration-300"
-          >
-            PLAY NOW
-          </Button>
-        </div>
-      </div>
-
       <footer className="border-t border-border bg-card/50 tactical-grid">
         <div className="container mx-auto px-4 py-12">
           <div className="text-center">
             <div className="mb-6">
-              <h3 className="text-2xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+              <h3 className="text-2xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent combat-pulse">
                 HAZMOB FPS
               </h3>
               <div className="w-16 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mt-2"></div>

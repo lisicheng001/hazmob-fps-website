@@ -5,19 +5,35 @@ import { GeistMono } from "geist/font/mono"
 import "./globals.css"
 
 export const metadata: Metadata = {
-  title: "Hazmob FPS: Online Shooter - Play Free FPS Game",
+  title: "Hazmob FPS - Ultimate FPS Gaming Collection | 5 Free Online Shooters",
   description:
-    "Experience intense tactical combat in Hazmob FPS, the ultimate online multiplayer shooter. Play free in your browser with realistic weapons and strategic gameplay.",
+    "Play 5 intense FPS games including Hazmob, Cosmic Strike 2.0, RGB Shooter, Sharpshot Trials & Dead Zone 15165. Free tactical combat games with multiplayer action, realistic weapons and strategic gameplay.",
   generator: "v0.app",
-  keywords: "hazmobfps, fps game, online shooter, multiplayer, tactical combat, free game",
+  keywords:
+    "hazmobfps, fps games, online shooter, multiplayer, tactical combat, free games, cosmic strike, rgb shooter, sharpshot trials, dead zone, browser games",
   authors: [{ name: "Hazmob FPS Team" }],
   robots: "index, follow",
   openGraph: {
-    title: "Hazmob FPS: Online Shooter",
-    description: "Experience intense tactical combat in the ultimate online multiplayer shooter",
+    title: "Hazmob FPS - Ultimate FPS Gaming Collection",
+    description:
+      "Play 5 intense FPS games with tactical combat, realistic weapons and multiplayer action. Free to play in your browser.",
     url: "https://hazmobfps.com",
-    siteName: "Hazmob FPS",
+    siteName: "Hazmob FPS Gaming Platform",
     type: "website",
+    images: [
+      {
+        url: "https://hazmobfps.com/abstract-geometric-shapes.png",
+        width: 1200,
+        height: 630,
+        alt: "Hazmob FPS Gaming Collection - 5 Free Online Shooters",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Hazmob FPS - Ultimate FPS Gaming Collection",
+    description: "Play 5 intense FPS games with tactical combat and multiplayer action. Free to play in your browser.",
+    images: ["https://hazmobfps.com/abstract-geometric-shapes.png"],
   },
 }
 
