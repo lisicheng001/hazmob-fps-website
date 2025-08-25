@@ -146,7 +146,7 @@ export default function HazmobFPSPageClient() {
                   <div className="relative">
                     <div className="w-full h-80 relative overflow-hidden">
                       <img
-                        src={`/abstract-geometric-shapes.png?height=320&width=480&query=${encodeURIComponent(`${game.title} FPS game cover art military tactical shooter dark theme neon green pink accents`)}`}
+                        src={`/ceholder-svg-key-nqqho-height-320-width-480-text-.png?key=nqqho&height=320&width=480&text=${encodeURIComponent(game.title)}`}
                         alt={`${game.title} game cover`}
                         className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                       />
