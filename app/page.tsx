@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: "https://hazmobfps.com",
+    canonical: "https://hazmobfps.online",
   },
   other: {
     "google-site-verification": "index,follow",
