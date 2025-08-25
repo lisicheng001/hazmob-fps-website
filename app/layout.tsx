@@ -12,7 +12,17 @@ export const metadata: Metadata = {
   keywords:
     "hazmobfps, fps games, online shooter, multiplayer, tactical combat, free games, cosmic strike, rgb shooter, sharpshot trials, dead zone, browser games",
   authors: [{ name: "Hazmob FPS Team" }],
-  robots: "index, follow",
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
+  alternates: {
+    canonical: "https://hazmobfps.com",
+  },
   openGraph: {
     title: "Hazmob FPS - Ultimate FPS Gaming Collection",
     description:
@@ -43,18 +53,8 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en">
-      <head>
-        <link rel="canonical" href="https://hazmobfps.com" />
-        <style>{`
-html {
-  font-family: ${GeistSans.style.fontFamily};
-  --font-sans: ${GeistSans.variable};
-  --font-mono: ${GeistMono.variable};
-}
-        `}</style>
-      </head>
-      <body>{children}</body>
+    <html lang="en" className={`${GeistSans.variable} ${GeistMono.variable}`}>
+      <body className="font-sans antialiased">{children}</body>
     </html>
   )
 }
