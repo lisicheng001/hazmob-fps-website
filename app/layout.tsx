@@ -21,18 +21,18 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: "https://hazmobfps.com",
+    canonical: "https://hazmobfps.online",
   },
   openGraph: {
     title: "Hazmob FPS - Ultimate FPS Gaming Collection",
     description:
       "Play 5 intense FPS games with tactical combat, realistic weapons and multiplayer action. Free to play in your browser.",
-    url: "https://hazmobfps.com",
+    url: "https://hazmobfps.online",
     siteName: "Hazmob FPS Gaming Platform",
     type: "website",
     images: [
       {
-        url: "https://hazmobfps.com/abstract-geometric-shapes.png",
+        url: "https://hazmobfps.online/abstract-geometric-shapes.png",
         width: 1200,
         height: 630,
         alt: "Hazmob FPS Gaming Collection - 5 Free Online Shooters",
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Hazmob FPS - Ultimate FPS Gaming Collection",
     description: "Play 5 intense FPS games with tactical combat and multiplayer action. Free to play in your browser.",
-    images: ["https://hazmobfps.com/abstract-geometric-shapes.png"],
+    images: ["https://hazmobfps.online/abstract-geometric-shapes.png"],
   },
 }
 
@@ -55,9 +55,20 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${GeistSans.variable} ${GeistMono.variable}`}>
       <head>
-        <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-        <meta name="googlebot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-        <meta name="bingbot" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+        <meta
+          name="robots"
+          content="index, follow, all, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+        />
+        <meta
+          name="googlebot"
+          content="index, follow, all, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+        />
+        <meta
+          name="bingbot"
+          content="index, follow, all, max-snippet:-1, max-image-preview:large, max-video-preview:-1"
+        />
+        <meta name="slurp" content="index, follow, all" />
+        <meta name="duckduckbot" content="index, follow, all" />
       </head>
       <body className="font-sans antialiased">{children}</body>
     </html>
