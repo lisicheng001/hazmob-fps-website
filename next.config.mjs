@@ -1,14 +1,12 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
-  typescript: {
-    ignoreBuildErrors: true,
-  },
-  images: {
-    unoptimized: true,
-  },
+  reactStrictMode: true,
+
+  // 可选：Cloudflare Pages 上常见的设置
+  images: { unoptimized: true },
+  typescript: { ignoreBuildErrors: true },
+
+  // 统一在这里设置 X-Robots-Tag（允许索引）
   async headers() {
     return [
       {
@@ -16,25 +14,15 @@ const nextConfig = {
         headers: [
           {
             key: 'X-Robots-Tag',
-            value: 'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1',
+            value:
+              'index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1',
           },
-          {
-            key: 'Cache-Control',
-            value: 'public, max-age=3600, must-revalidate',
-          },
+          // 可选缓存（不影响收录）
+          { key: 'Cache-Control', value: 'public, max-age=3600, must-revalidate' },
         ],
       },
-      {
-        source: '/',
-        headers: [
-          {
-            key: 'X-Robots-Tag',
-            value: 'index, follow, max-snippet:-1, max-image-preview:large',
-          },
-        ],
-      },
-    ]
+    ];
   },
-}
+};
 
-export default nextConfig
+export default nextConfig;
