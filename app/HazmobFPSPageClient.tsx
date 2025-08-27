@@ -350,7 +350,7 @@ export default function HazmobFPSPageClient() {
               <div className="w-16 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mt-2"></div>
             </div>
             <p className="text-muted-foreground mb-4">© 2024 Hazmob FPS Command. All tactical operations secured.</p>
-            <p className="text-muted-foreground/70 text-sm">hazmobfps.com - Elite FPS Gaming Platform</p>
+            <p className="text-muted-foreground/70 text-sm">hazmobfps.online - Elite FPS Gaming Platform</p>
             <div className="flex justify-center gap-6 mt-6">
               <Button variant="ghost" size="sm" className="text-primary hover:text-primary/80">
                 🎮 Games
